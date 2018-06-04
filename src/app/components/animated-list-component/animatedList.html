@@ -1,0 +1,42 @@
+<div class="post_list_container">
+  <div class="container">
+    <div class="pagination">
+      <button :disabled="currentPage === 1 || loadingData"
+              @click.prevent="changePage(currentPage - 1)"
+      >
+      Prev
+      </button>
+    </div>
+  </div>
+
+
+
+
+    <!--<div class="post_item_container">-->
+      <!--<todo-item v-for="(post,index) in filteredPostsArray"-->
+                 <!--:key="post.id"-->
+                 <!--v-bind:singlePost="post"-->
+                 <!--class="post_item"-->
+      <!--&gt;</todo-item>-->
+      <!--<pagin-->
+              <!--v-bind:current="currentPage"-->
+              <!--v-bind:nextPage="nextPage"-->
+              <!--v-bind:prevPage="prevPage"-->
+              <!--v-bind:noPrevPage="noPrevPage"-->
+              <!--v-bind:noNextPage="noNextPage"-->
+              <!--v-bind:totalPages="totalPages"-->
+
+              <!--v-bind:hasFirst="hasFirst"-->
+              <!--v-bind:hasEnd="hasEnd"-->
+
+              <!--v-bind:pages="pages"-->
+
+              <!--v-on:prevPageEvent = "onPrevPageEvent"-->
+              <!--v-on:nextPageEvent = "onNextPageEvent"-->
+              <!--v-on:getAllPosts = "getAllPosts"-->
+
+             <!--class="pagin"-->
+      <!--&gt;</pagin>-->
+    <!--</div>-->
+
+</div>
